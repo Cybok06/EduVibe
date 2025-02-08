@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduVibe.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Company Logo -->
+        <img src="company-logo.PNG" alt="Company Logo" class="logo">
+
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="UserID">UserID</label>
+            <input type="text" id="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Error message if login is incorrect -->
+        <p id="error-message" style="color: red; display: none;">Invalid username or password!</p>
+
+        <!-- "Get account" section -->
+        <p class="get-account">
+            Don't have an account? <a href="#" id="contact-link">Get account</a>
+        </p>
+
+        <!-- Contact message will be shown when user clicks "Get account" -->
+        <div id="contact-info" style="display: none;">
+            <p>Contact us: <a href="mailto:eduvibe25k@gmail.com">eduvibe25k@gmail.com</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        window.cbConfig = {
+          chatId: "df9b6a2d-6d1b-4164-9b6b-72acfc4a029e"
+        };
+      </script>
+      <script src="https://app.chatbit.co/embed.min.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* Reset the margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Set a default background image */
+body {
+    background-image: url('edupic.jpg'); /* Default background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 0.5s ease-in-out; /* Smooth transition for background change */
+}
+
+/* Center the login form */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.6); /* Lighter semi-transparent background */
+    backdrop-filter: blur(0px); /* Add blur effect to the background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Logo Styling */
+.logo {
+    width: 150px; /* Adjust the size of the logo */
+    margin-bottom: 20px; /* Space between the logo and the form */
+    border-radius: 8px; /* Add border radius for rounded corners */
+}
+
+/* Styling the form elements */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007BFF;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Error message styling */
+#error-message {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Styling for "Get account" link */
+.get-account {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.get-account a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.get-account a:hover {
+    text-decoration: underline;
+}
+
+/* Contact info styling */
+#contact-info {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+#contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design: Make sure the login form is centered and responsive */
+@media screen and (max-width: 600px) {
+    .login-container {
+        padding: 20px;
+        width: 90%; /* Make form width responsive */
+        max-width: 90%;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button {
+        font-size: 14px;
+    }
+}

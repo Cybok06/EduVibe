@@ -1,0 +1,80 @@
+/* Universal Reset for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background image for the entire body */
+body {
+    background-image: url('edupic2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Header Styling (Company Logo) */
+header {
+    position: absolute;
+    top: 20px; /* Position the logo at the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center the logo horizontally */
+    z-index: 10;
+}
+
+/* Logo styling */
+.logo {
+    width: 150px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 255, 0.5); 
+}
+
+/* Iframe Container Styling */
+.iframe-container {
+    position: fixed; /* Fixed position to make it stay on the screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Make iframe responsive and center it */
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 700px; /* Ensure the iframe doesn't get too small */
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    /* For mobile, the iframe should cover the entire screen */
+    .iframe-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Full screen height for mobile */
+    }
+
+    .logo {
+        position: absolute;
+        top: 20px; /* Keep logo at the top */
+        left: 50%;
+        transform: translateX(-50%); /* Center logo horizontally */
+        z-index: 10;
+        width: 120px; /* Adjust logo size for mobile */
+    }
+
+    .iframe-container iframe {
+        width: 100%;
+        height: 100%; /* Fill the screen on mobile */
+    }
+}
