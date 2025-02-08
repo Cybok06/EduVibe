@@ -50,7 +50,7 @@ header {
 /* Make iframe responsive and center it */
 .iframe-container iframe {
     width: 100%;
-    height: 100%;
+    height: 80%;
     min-height: 700px; /* Ensure the iframe doesn't get too small */
 }
 
@@ -59,10 +59,10 @@ header {
     /* For mobile, the iframe should cover the entire screen */
     .iframe-container {
         position: fixed;
-        top: 0;
+        top: 10;
         left: 0;
         width: 100%;
-        height: 100vh; /* Full screen height for mobile */
+        height: 80%; /* Full screen height for mobile */
     }
 
     .logo {
